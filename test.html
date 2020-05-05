@@ -5,6 +5,7 @@ var url = new URL(urlString);
 var c = url.searchParams.get("url");
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(){
+alert(xhr.readyState+" "+xhr.status);
 if(xhr.readyState == 4 && xhr.status== 200){
 document.write(xhr.responseText);
 
