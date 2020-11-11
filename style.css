@@ -63,7 +63,7 @@ header p{
 }
 #skill{
   text-align:center;
-  margin-top:20px;
+  margin-top:45px;
   padding:20px;
   
 }
@@ -84,12 +84,12 @@ header p{
 }
 #project{
   text-align:center;
-  margin-top:20px;
+  margin-top:45px;
   padding:20px;
 }
 #about{
-  margin-top:20px;
-  padding:10px;
+  margin-top:45px;
+  padding:20px;
   text-align:center;
 }
 body{
