@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <form method="post" action="https://rian-rtc.herokuapp.com/chat">
+    <input type="text" name="nama" placeholder="nama">
+    <input type="text" name="profile" placeholder="image">
+    <input type="text" name="email" placeholder="email">
+    <input type="text" name="token">
+    </form>
+    <button>test</button>
+    <script type="text/javascript" charset="utf-8">
+      document.querySelector("button").addEventListener('click',()=>{
+          fetch("https://rian-rtc.herokuapp.com/email?nama="+document.querySelector("input[name=nama]").value+"&email="+document.querySelector("input[name=email]").value).then(r=>{
+            document.querySelector("form").submit();
+          });
+      });
+    </script>
+  
+</body>
+
+</html>
