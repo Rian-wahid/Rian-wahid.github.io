@@ -20,4 +20,5 @@ const quotes=[
       index++;
       document.querySelector("#quote p").innerHTML=quotes[index];
     }
+    
   });
